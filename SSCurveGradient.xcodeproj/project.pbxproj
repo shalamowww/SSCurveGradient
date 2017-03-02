@@ -10,6 +10,7 @@
 		A92B8EF61E679CC0001DE4AF /* SSCurveGradient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A92B8EEC1E679CC0001DE4AF /* SSCurveGradient.framework */; };
 		A92B8EFB1E679CC0001DE4AF /* SSCurveGradientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92B8EFA1E679CC0001DE4AF /* SSCurveGradientTests.swift */; };
 		A92B8EFD1E679CC0001DE4AF /* SSCurveGradient.h in Headers */ = {isa = PBXBuildFile; fileRef = A92B8EEF1E679CC0001DE4AF /* SSCurveGradient.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A92B8F071E67A176001DE4AF /* SSCurveGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92B8F061E67A176001DE4AF /* SSCurveGradient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		A92B8EF51E679CC0001DE4AF /* SSCurveGradientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SSCurveGradientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A92B8EFA1E679CC0001DE4AF /* SSCurveGradientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSCurveGradientTests.swift; sourceTree = "<group>"; };
 		A92B8EFC1E679CC0001DE4AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A92B8F061E67A176001DE4AF /* SSCurveGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSCurveGradient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				A92B8EEF1E679CC0001DE4AF /* SSCurveGradient.h */,
+				A92B8F061E67A176001DE4AF /* SSCurveGradient.swift */,
 				A92B8EF01E679CC0001DE4AF /* Info.plist */,
 			);
 			path = SSCurveGradient;
@@ -148,6 +151,7 @@
 				TargetAttributes = {
 					A92B8EEB1E679CC0001DE4AF = {
 						CreatedOnToolsVersion = 8.2.1;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					A92B8EF41E679CC0001DE4AF = {
@@ -196,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A92B8F071E67A176001DE4AF /* SSCurveGradient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,6 +325,7 @@
 		A92B8F011E679CC0001DE4AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -331,6 +337,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = curve.gradient.SSCurveGradient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -338,6 +345,7 @@
 		A92B8F021E679CC0001DE4AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -356,6 +364,7 @@
 		A92B8F041E679CC0001DE4AF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SSCurveGradientTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = curve.gradient.SSCurveGradientTests;
@@ -367,6 +376,7 @@
 		A92B8F051E679CC0001DE4AF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = SSCurveGradientTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = curve.gradient.SSCurveGradientTests;
